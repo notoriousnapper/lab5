@@ -3,11 +3,23 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+	$(".name").click(function (e) {
+        var name = $(this).text();
+        $(this).text(anagrammedName(name));
+        e.preventDefault();
+    });
 })
+
+	
+
+
 
 /*
  * Function that is called when the document is ready.
  */
+
+
+
 function initializePage() {
 	console.log("Javascript connected!");
 }
